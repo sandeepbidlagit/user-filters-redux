@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import {Routes, Route, HashRouter } from 'react-router-dom'
 import UsersList from './components/UserList'
 import UserDetails from './components/UserDetails'
 import { Provider } from 'react-redux'
@@ -8,12 +8,12 @@ function App() {
   return (
     <>
       <Provider store={store}>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path='/' element={<UsersList />} />
             <Route path='/product/:id' element={<UserDetails />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </Provider>
 
     </>

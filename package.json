@@ -1,16 +1,16 @@
 {
-  "homepage": "https://github.com/sandeepbidlagit/user-filters-redux",
+  "homepage": "https://github.com/sandeepbidlagit/user-filters-redux/#/",
   "name": "user-filter-redux",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
