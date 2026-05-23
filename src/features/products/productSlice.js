@@ -96,7 +96,7 @@ const productSlice = createSlice({
 
       // year FILTER
       if (year) {
-        filtered = filtered.filter((item) => item.year === year)
+        filtered = filtered.filter((item) => item.years ===  Number(year))
       }
 
       // year FILTER
