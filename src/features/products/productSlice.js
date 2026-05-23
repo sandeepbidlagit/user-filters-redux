@@ -148,7 +148,7 @@ export function fetchProducts() {
   return async function fetchProductThunk(dispatch) {
     try {
       dispatch(setLoading(true))
-      const res = await fetch('/users.json');
+      const res = await fetch('/user-filters-redux/users.json');
       if (!res.ok) {
         throw new Error(
           "Failed to fetch products"
