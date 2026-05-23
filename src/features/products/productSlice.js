@@ -155,7 +155,6 @@ export function fetchProducts() {
         );
       }
       const data = await res.json();
-      console.log(data)
       dispatch(setProducts(data))
     } catch (err) {
       console.log(err)
