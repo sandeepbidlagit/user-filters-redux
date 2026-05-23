@@ -24,7 +24,7 @@ const UserCards = () => {
         {/* ================= LOADER ================= */}
         {loading && (
           <div id="loader">
-            <img src="/loader-blue.gif" alt="" />
+            <img src="/user-filters-redux/loader-blue.gif" alt="" />
           </div>
         )}
 
